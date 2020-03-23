@@ -1,0 +1,129 @@
+.App {
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  color: #516fe6;
+  box-sizing: border-box;
+}
+
+:root {
+  --hue-neutral: 221;
+  --hue-wrong: 0;
+  --hue-correct: 145;
+}
+
+body {
+  --hue: var(--hue-neutral);
+  font-size: 1.2rem;
+  font-family: 'Poppins', sans-serif;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: -webkit-linear-gradient(to right, #0a55a0, #0b6bac);
+  background-color: hsl(var(--hue), 100%, 20%);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 800px;
+  max-width: 80%;
+  background-color: white;
+  border-radius: 5px;
+  padding: 11px;
+  box-shadow: 0 0 10px 3px;
+  margin: 10% auto;
+}
+
+.container-two {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 800px;
+  max-width: 80%;
+  background-color: white;
+  border-radius: 5px;
+  padding: 11px;
+  box-shadow: 0 0 10px 3px;
+  margin: 10% auto;
+}
+
+.option {
+  --hue: var(--hue-neutral);
+  border: 1px solid hsl(var(--hue), 100%, 30%);
+  background-color: hsl(var(--hue), 50%, 50%);
+  border-radius: 8px;
+  padding: 10px 20px;
+  color: white;
+  outline: none;
+}
+
+.result {
+  margin-top: 20px;
+}
+
+.options {
+  --hue: var(--hue-neutral);
+  border: 1px solid hsl(var(--hue), 100%, 30%);
+  background-color: hsl(var(--hue), 50%, 50%);
+  border-radius: 8px;
+  padding: 10px 20px;
+  color: white;
+  outline: none;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 11px;
+  margin: 20px 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.option:hover {
+  color: black;
+}
+
+.back-btn,
+.next-btn,
+.finish-btn {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  --hue: var(--hue-neutral);
+  border: 1px solid hsl(var(--hue), 100%, 30%);
+  background-color: hsl(var(--hue), 50%, 50%);
+  border-radius: 8px;
+  color: white;
+  outline: none;
+  cursor: pointer;
+}
+
+.next-btn {
+  margin-left: 8px;
+}
+
+.back-btn:hover {
+  color: rgba(11, 9, 19, 0.452);
+}
+
+.finish-btn {
+  margin-left: 8px;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.correctAnswer {
+  color: white;
+  background: rgb(23, 167, 23);
+}
+
+.incorrectAnswer {
+  background: red;
+  color: white;
+}
